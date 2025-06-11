@@ -1,0 +1,11 @@
+@MortgageRatesApi_HostAddress = https://localhost:7282
+
+GET {{MortgageRatesApi_HostAddress}}/api/rates?loanType=owner-occupied&term=30
+Accept: application/json
+
+###
+
+GET {{MortgageRatesApi_HostAddress}}/api/rates?loanType=invalid&term=0
+Accept: application/json
+
+###
